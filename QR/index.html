@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Video Player</title>
+    <style>
+        /* اجعل الجسم يغطي الشاشة كلها */
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* الفيديو يكون 100% من الشاشة مع الحفاظ على نسبة العرض إلى الارتفاع */
+        video {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            object-fit: contain; /* يحافظ على نسبة الفيديو */
+        }
+
+        /* لمنع التمرير على الهاتف */
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay controls>
+        <source src="WhatsApp Video 2026-01-04 at 6.29.56 PM.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
